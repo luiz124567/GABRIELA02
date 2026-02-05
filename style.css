@@ -1,0 +1,80 @@
+body{
+padding: auto;
+}
+.heart {
+    background-color: red;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    
+    left: 150px;
+    transform: rotate(-45deg);
+    box-shadow: -5px 10px 90px red;
+    animation: untoldcoding 0.8s linear infinite;
+  }
+  
+  @keyframes untoldcoding {
+    0% {
+      transform: rotate(-45deg) scale(1.05);
+    }
+    70% {
+      transform: rotate(-45deg) scale(1);
+    }
+    100% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+  }
+  .heart:before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: red;
+    top: -40px;
+    border-radius: 50px;
+  }
+  .heart:after {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: red;
+    right: -40px;
+    border-radius: 50px;
+  }
+  h1{
+    width: 89%;
+     font-size: 32px;
+    text-align: center;
+  }
+  P{
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+  mediaque/* Estilo padrão (desktop ou geral) */
+  body {
+    background-color: white;
+    font-size: 16px;
+  }
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+    body {
+      background-color: lightgray;
+    }
+  }
+  
+  /* Celulares */
+  @media (max-width: 768px) {
+    body {
+      background-color: lightblue;
+      font-size: 14px;
+    }
+  }
+h2{font-size: 45px;
+  text-align: center;
+}
+img{width: 30%;
+padding-left: 50px;
+}
